@@ -1,0 +1,4 @@
+resume.*
+*.png
+
+!resume.tex
