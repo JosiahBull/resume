@@ -1,4 +1,6 @@
 resume.*
+coverletter.*
 *.png
 
 !resume.tex
+!coverletter.tex
