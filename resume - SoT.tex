@@ -65,20 +65,23 @@
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader[C]
 
-%-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
-%-------------------------------------------------------------------------------
-\input{resume/experience.tex}
-\input{resume/skills.tex}
-\input{resume/achievements.tex}
-\input{resume/projects.tex}
-\input{resume/education.tex}
-
 \makecvfooter
   {\today}
   {Josiah Bull~~~·~~~Résumé}
   {\thepage}
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{sot/summary.tex}
+\input{sot/experience.tex}
+\input{sot/skills.tex}
+\input{sot/projects.tex}
+\input{sot/education.tex}
+\input{sot/achievements.tex}
+\input{sot/references.tex}
+
 
 
 %-------------------------------------------------------------------------------

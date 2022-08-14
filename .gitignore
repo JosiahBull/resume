@@ -2,5 +2,11 @@ resume.*
 coverletter.*
 *.png
 
+*.aux
+*.fls
+*.log
+*.pdf
+*.fdb_latexmk
+
 !resume.tex
 !coverletter.tex
