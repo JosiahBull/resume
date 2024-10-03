@@ -9,6 +9,7 @@ View the latest resume in pdf format [here](https://github.com/JosiahBull/resume
 [![an image version of my latest CV](https://github.com/JosiahBull/resume/releases/download/latest/Josiah_Bull-Resume.png)](https://github.com/JosiahBull/resume/releases/download/latest/Josiah_Bull-Resume.pdf)
 
 ## Manual Generation
+
 ```bash
 xelatex resume.tex
 ```
