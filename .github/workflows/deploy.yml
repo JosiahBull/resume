@@ -28,7 +28,7 @@ jobs:
           mv Josiah_Bull-Resume-1.png Josiah_Bull-Resume.png
 
       - name: Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
           files: |
