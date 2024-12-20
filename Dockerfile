@@ -1,7 +1,7 @@
 FROM ghcr.io/josiahbull/dotfiles:main
 
 # Install everything reuqired to build the resume.
-RUN apt-get install -y texlive \
+RUN sudo apt-get update && sudo apt-get install -y texlive \
     texlive-fonts-recommended \
     texlive-fonts-extra \
     poppler-utils \
