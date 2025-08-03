@@ -9,6 +9,7 @@ coverletter.*
 *.fdb_latexmk
 *.xdv
 *.gz
+.DS_Store
 
 !resume.tex
 !coverletter.tex

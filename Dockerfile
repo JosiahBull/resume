@@ -1,11 +1,17 @@
-FROM ghcr.io/josiahbull/dotfiles:main
+FROM ghcr.io/josiahbull/dotfiles:latest
 
-# Install everything reuqired to build the resume.
-RUN sudo apt-get update && sudo apt-get install -y texlive \
+# Install everything required to build the resume.
+RUN sudo apt-get update && sudo apt-get install \
+    -y \
+    build-essential \
+    texlive \
     texlive-fonts-recommended \
     texlive-fonts-extra \
     poppler-utils \
-    texlive-xetex
+    texlive-xetex \
+    vim && \
+    sudo apt-get clean && \
+    sudo rm -rf /var/lib/apt/lists/*
 
 # Set the shell to zsh
 RUN chsh -s /bin/zsh
