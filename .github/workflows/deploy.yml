@@ -91,16 +91,7 @@ jobs:
             mv Josiah_Bull-Resume-1.png Josiah_Bull-Resume.png
           "
 
-      - name: Delete latest release and tag
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-        uses: dev-drpr/delete-tag-and-release@v1
-        with:
-          tag_name: latest
-          delete_repo_tag: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create latest release
+      - name: Release
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         uses: softprops/action-gh-release@v2
         with:
