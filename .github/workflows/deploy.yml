@@ -83,7 +83,7 @@ jobs:
       - name: Run Docker container to generate PDF and image
         run: |
           docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}:main
-          docker run --rm -v ${{ github.workspace }}:/workspace ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}:main /bin/bash -c "
+          docker run --rm --entrypoint /bin/sh -v ${{ github.workspace }}:/workspace ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}:main -c "
             cd /workspace &&
             xelatex -8bit -halt-on-error resume.tex &&
             mv resume.pdf Josiah_Bull-Resume.pdf &&
